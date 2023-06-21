@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách sinh viên</title>
+</head>
+<body>
+<h1>Danh sách sinh viên</h1>
+<form action="http://localhost:8080" method="get">
+    <label>Tìm kiếm:</label>
+    <input type="text" name="search">
+    <button>Tìm kiếm</button>
+</form>
+{list}
+<br/>
+<form action="http://localhost:8080" method="post">
+    <label>ID:</label>
+    <input type="number" name="id">
+    <label>Tên:</label>
+    <input type="text" name="name">
+    <label>Điểm:</label>
+    <input type="number" step="0.1" name="score">
+    <button>Thêm sinh viên</button>
+</form>
+</body>
+</html>
